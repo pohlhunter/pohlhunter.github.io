@@ -104,6 +104,9 @@
      background-color: #555;
      color: white;
 }
+ #nav_side li a.active {
+     color: #9c261f;
+}
  header {
      border-bottom: 2px solid black;
      background: linear-gradient(45deg, white, #9c261f 75%, black);
