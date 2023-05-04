@@ -1,43 +1,111 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
+
 <head>
-    <meta charset="utf-8" />
-    <title>Det 895</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>"></link>
+  <title>Phrased</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <meta name="description" content="Phrased. Phrased game. Phrase game made by ValHunner. Daily phrase game that changes at midnight. 5 strikes to guess the phrase as fast as you can!">
 </head>
 
-<header>
-    <img src="images/badgeSmall.png" alt="Det 895 Logo" width="80" height="80">
-    <h2>Det 895</h2>
-    <h3>Cascade Cowboys!</h3>
-</header>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🅿️</text></svg>"></link>
 
-<nav id="nav_menu">
-    <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="drill.html">Drill</a></li>
-        <li><a href="marching.html">Marching</a></li>
-        <li><a href="wk">Warrior Knowledge</a></li>
-        <li><a href="glps.html">GLPs</a></li>
-    </ul>
-</nav>
+<div class="popup">
+  <br>
+  <h1>Phrased</h1>
+  <br> 
 
-<body>
+  <h3 style="font-size : 45px;">Guess letters to complete the phrase<br><br>Choose a color scheme to start</h3>
+  <br> 
 
-    
-    <section>
-        <p>Quick and simple website for learning and reminders for early objectives.</p>
-        <br>
-        <img src="images/banner.png" alt="Det 895 Banner" style="display: block; margin-left: auto; margin-right: auto;">
-    </section>
+  <span style="text-align: center;">
+    <button id="close1" onclick="darkMode()" style="background-color: #000; color: #fff;">&#127761; Dark Mode</button><br>
+    <button id="close2" onclick="greyMode()" style="background-color: #656565; color: #fff;">&#127763; Grey Mode</button><br>
+    <button id="close3" onclick="lightMode()" style="background-color: #fff; color: #000;">&#128262; Light Mode</button>
+  </span>
+</div>
 
-    <footer>
-        <p>Current as of 1/30/2023</p>
-    </footer>
+<script>
+  function darkMode() {
+    var element = document.body;
+    element.className = "dark-mode";
+  }
 
-</body>
+  function greyMode() {
+    var element = document.body;
+    element.className = "grey-mode";
+  }
+
+  function lightMode() {
+    var element = document.body;
+    element.className = "light-mode";
+  }
+</script>
+
+<br>
+<h1 id"titlePhrased">Phrased</h1>
+
+<div id="clock">&#9203; 0:00 </div>
+<p id="mylives"></p>
+
+<p id="correctAnswer"></p>
+
+<div class="wrapper">
+  <div id="hold">
+  </div>
+
+  <br>
+  <div id="buttons1"> </div>
+  <div id="buttons2"> </div>
+  <div id="buttons3"> </div>
+
+  <style>
+    .theCopyButton {
+      visibility: hidden;
+    }
+  </style>
+  <br>
+</div>
+
+
+
+<script type="text/JavaScript" src="https://MomentJS.com/downloads/moment.js"></script>
+
+<script type="text/JavaScript" src="https://momentjs.com/downloads/moment-timezone-with-data-10-year-range.js"></script>
+
+<h3>
+  <footer id="footText"> </footer>
+</h3>
+
+
+<div id="pr-popupResult" class="pr-hidden" onclick="hide()">
+  <div class="pr-popup-content">
+      <div class="theCopyButton">
+        <button id="copyText" style="font-size : 40px; margin: 0 auto;">Share Result</button>
+      </div>
+      <br>
+      <h3 style="font-size : 1.4em;">Phrase changes at midnight</h3>
+
+      <h3 style="font-size : 1.4em;">Can be a clause, phrase, or short sentence</h3>
+      <br>
+      <footer id="val" style="font-size : 1.8em; visibility: hidden;"><a href="https://www.valhunner.com" target="_blank">ValHunner Website</a></footer>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
 
 </html>
