@@ -3,106 +3,32 @@
 
 
 <head>
-  <title>Phrased</title>
+  <title>Hunter Pohl</title>
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <meta name="description" content="Phrased. Phrased game. Phrase game made by ValHunner. Daily phrase game that changes at midnight. 5 strikes to guess the phrase as fast as you can!">
 </head>
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🅿️</text></svg>"></link>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>"></link>
 
 <div class="popup">
   <br>
-  <h1>Phrased</h1>
+  <h1>Hunter Pohl - Portfolio</h1>
   <br> 
 
-  <h3 style="font-size : 45px;">Guess letters to complete the phrase<br><br>Choose a color scheme to start</h3>
+  <h3 style="font-size : 45px;">Choose the project to look at</h3>
   <br> 
 
   <span style="text-align: center;">
-    <button id="close1" onclick="darkMode()" style="background-color: #000; color: #fff;">&#127761; Dark Mode</button><br>
-    <button id="close2" onclick="greyMode()" style="background-color: #656565; color: #fff;">&#127763; Grey Mode</button><br>
-    <button id="close3" onclick="lightMode()" style="background-color: #fff; color: #000;">&#128262; Light Mode</button>
+    <button onclick="window.open('https://phrased.win/', '_blank')" style="background-color: #000; color: #fff;">Dark Mode</button><br>
+    <button onclick="window.open('https://www.valhunner.com/', '_blank')" style="background-color: #656565; color: #fff;">Grey Mode</button><br>
+    <button onclick="window.open('https://hunnervalue.pythonanywhere.com/', '_blank')" style="background-color: #fff; color: #000;">Light Mode</button>
   </span>
 </div>
-
-<script>
-  function darkMode() {
-    var element = document.body;
-    element.className = "dark-mode";
-  }
-
-  function greyMode() {
-    var element = document.body;
-    element.className = "grey-mode";
-  }
-
-  function lightMode() {
-    var element = document.body;
-    element.className = "light-mode";
-  }
-</script>
-
-<br>
-<h1 id"titlePhrased">Phrased</h1>
-
-<div id="clock">&#9203; 0:00 </div>
-<p id="mylives"></p>
-
-<p id="correctAnswer"></p>
-
-<div class="wrapper">
-  <div id="hold">
-  </div>
-
-  <br>
-  <div id="buttons1"> </div>
-  <div id="buttons2"> </div>
-  <div id="buttons3"> </div>
-
-  <style>
-    .theCopyButton {
-      visibility: hidden;
-    }
-  </style>
-  <br>
-</div>
-
 
 
 <script type="text/JavaScript" src="https://MomentJS.com/downloads/moment.js"></script>
 
 <script type="text/JavaScript" src="https://momentjs.com/downloads/moment-timezone-with-data-10-year-range.js"></script>
-
-<h3>
-  <footer id="footText"> </footer>
-</h3>
-
-
-<div id="pr-popupResult" class="pr-hidden" onclick="hide()">
-  <div class="pr-popup-content">
-      <div class="theCopyButton">
-        <button id="copyText" style="font-size : 40px; margin: 0 auto;">Share Result</button>
-      </div>
-      <br>
-      <h3 style="font-size : 1.5em;">Phrase changes at midnight</h3>
-
-      <h3 style="font-size : 1.5em;">Can be a clause, phrase, or short sentence</h3>
-      <br>
-      <footer id="val" style="font-size : 1.8em; visibility: hidden;"><a href="https://www.valhunner.com" target="_blank">ValHunner Website</a></footer>
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="script.js"></script>
 
