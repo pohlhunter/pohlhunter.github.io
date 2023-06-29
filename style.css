@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #F1E5C3;
+  background: #caccd1;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #000000;
@@ -83,7 +83,7 @@ body {
 
 
 .popup {
-  background-color: #F1E5C3;
+  background-color: #caccd1;
   color: #000;
   width: 100%;
   height: 100%;
